@@ -58,7 +58,7 @@ class UserServiceTest {
             userService.getUserById(notFoundUserId)
         }
 
-        assertEquals("User not found with id $notFoundUserId", exception.message)
+        assertEquals("User not found with id: $notFoundUserId", exception.message)
     }
 
     @Test
