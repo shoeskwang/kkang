@@ -10,7 +10,7 @@ import jakarta.persistence.Table
 @Table(name = "orders")
 data class Order(
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    val id: Long = 0,
+    val id: Long = 0L,
     val userId: Long,
     val product: String,
     val amount: Int,
